@@ -47,7 +47,7 @@
       <a href="#" class="button">Accesorios</a>
       <a href="#" class="button">Ropa</a>
       <a href="#" class="button">Mantenimiento</a>
-      <a href="#" class="button hollow secondary">Carrito<i class="fi-shopping-cart"></i></a>
+      <a href="#" class="button hollow secondary">Carrito <i class="fi-shopping-cart"></i></a>
     </div>
     <!-- Bredcrumbs section? -->
     <ul class="breadcrumbs">
@@ -62,6 +62,51 @@
       <div class="large-3 cell">
         <div class="callout">
           <h4>Búsqueda Avanzada</h4>
+          <!-- Advanced search form -->
+          <form class="" action="index.html" method="post">
+            <label for="">Por nombre:
+              <input type="text" name="" value="">
+            </label>
+            <label for="">Por referencia:
+              <input type="text" aria-describedby="byRefSearch">
+            </label>
+            <p class="help-text" id="byRefSearch">Número único del producto</p>
+            <label for="">Por categoria:
+              <select class="" name="">
+                <option value="hogar">Hogar</option>
+                <option value="salud">Salud</option>
+                <option value="deporte">Deporte</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="ropa">Ropa</option>
+                <option value="mantenimiento">Mantenimiento</option>
+              </select>
+            </label>
+            <fieldset>
+              <legend>Tipo de producto:</legend>
+              <input type="checkbox" name="" value="">Nuevo
+              <input type="checkbox" name="" value="">Usado
+            </fieldset>
+            <fieldset>
+              <legend>Tipo precio:</legend>
+              <input type="radio" name="price" value="">Pleno
+              <input type="radio" name="price" value="">En oferta
+            </fieldset>
+            <div class="grid-x align-center">
+              <label for="">¿Buscar productos agotados?</label>
+              <div class="switch">
+                <input class="switch-input" type="checkbox" id="soldOut">
+                <label class="switch-paddle" for="soldOut">
+                  <span class="switch-active" aria-hidden="true">Si</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+                </label>
+              </div>
+            </div>
+            <hr>
+            <div class="grid-x align-center">
+              <button type="submit" name="enviar" class="button">Buscar <i class="step fi-magnifying-glass"></i></button>
+            </div>
+          </form>
         </div>
       </div>
       <!-- Right panel images -->
